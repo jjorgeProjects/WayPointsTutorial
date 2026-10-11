@@ -26,7 +26,7 @@ public class WaypointPatrol : MonoBehaviour
         // Check if the waypoint has been reached
         if (direction.magnitude <= arrivalDistance)
         {
-            NextWaypoint();
+            NextWaypoint2();
             return;
         }
 
@@ -51,10 +51,11 @@ public class WaypointPatrol : MonoBehaviour
         }
     }
 
-    private void NextWaypoint()
+    private void NextWaypoint1()
     {
         currentWaypoint =
             (currentWaypoint + 1) % path.Count;
+
     }
 
 
